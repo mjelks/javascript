@@ -223,6 +223,7 @@
 	}
 
 	option 3: wrap in anonymous function
+	```
 	var demoApp = angular.module('demoApp', []);
 	
 	(function() {
@@ -234,15 +235,15 @@
 	} ());
 	
 
-	dealing with minification
+	// dealing with minification
 	angular.module('demoApp')
 		.controller('SimpleController', ['$scope', function ($scope) {
 		}]);
 		
-	OR
+	// OR
 	
 	SimpleController.$inject = ['$scope']
-	
+	```
 # PART 4: Routing
 
 	## Routing Overview
