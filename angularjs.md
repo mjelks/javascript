@@ -97,7 +97,7 @@
 	
 # PART 2 : Directives
 
-- Data Binding Overview
+  - Data Binding Overview
 	- JS doesn't provide native support for data binding
 	- two-way data binding can lead to significant reductions in code
 		- properties linked together can update each other
@@ -118,7 +118,7 @@
 		
 
 
-- Directives and Expressions
+  - Directives and Expressions
 	- What are Directives?
 		- building blocks that teach HTML new tricks
 		- key part of AngularJS
@@ -135,11 +135,11 @@
 		- custom tags
 			ex: <ng-view></ng-view>
 
-- Iterating over Data
+  - Iterating over Data
 	- use ng-repeat
 	- great for <li> <tr>
 
-- Sorting and Formatting Data
+  - Sorting and Formatting Data
 	- use the pipe character
 	- key AngularJS filters	
 		- currency
@@ -245,94 +245,95 @@
 	
 # PART 4: Routing
 
-	- Routing Overview
-		- marry view with controller
-		- important in SPAs in general
-		- history / navigation management
-		- relies on ngRoute module (separate script)
-		- routes configured using $routeProvider (AngularJS built-in)
-		- routes configured by :
-			angular.module.config()
-			$routeProvider injected dynamically
-	
-	- Referencing the ngRoute Module
-		- Add a <script> tag that loads angular-route.js script
-			- right after loading angular.js
-		- reference ngRoute in your module
-			- var demoApp = angular.module('demoApp', ['ngRoute'])
-	
-	- Configuring Routes
-		- use routeProvider object to associate route with view/controller
-	
-	- Using the ng-view Directive
-	
-	- Summary
-		- built-in support for routing
-		- routes associate view w/ controller
-		- NEED TO reference the ngRoute module (not built-in to core)
-		- $routeProvider injected into angular.module.config()
-		- route parameters are key (similar to rails design)
-		
+	## Routing Overview
+	- marry view with controller
+	- important in SPAs in general
+	- history / navigation management
+	- relies on ngRoute module (separate script)
+	- routes configured using $routeProvider (AngularJS built-in)
+	- routes configured by :
+		angular.module.config()
+		$routeProvider injected dynamically
+
+- Referencing the ngRoute Module
+	- Add a <script> tag that loads angular-route.js script
+		- right after loading angular.js
+	- reference ngRoute in your module
+		- var demoApp = angular.module('demoApp', ['ngRoute'])
+
+- Configuring Routes
+	- use routeProvider object to associate route with view/controller
+
+- Using the ng-view Directive
+
+- Summary
+	- built-in support for routing
+	- routes associate view w/ controller
+	- NEED TO reference the ngRoute module (not built-in to core)
+	- $routeProvider injected into angular.module.config()
+	- route parameters are key (similar to rails design)
+
 # PART 5: Factories and Services
-	- Overview
-		- shared code across controllers
-		- built directly into AngularJS Framework
-		- injected into a Controller
+
+	## Overview
+	- shared code across controllers
+	- built directly into AngularJS Framework
+	- injected into a Controller
 		
-	- Factory and Service Overview
-		- AngularJS includes several built-in factories/services
-		- singletons
-			- Ajax calls
-			- business rules
-			- calculations
-			- data sharing between controllers
-		- can create your own using the Module approach
-		- built-ins: (services)
-			- $http
-			- $timeout
-			- $window
-			- $location
-			- $q (async processes)
-			- $rootScope
-			- $interval (repeating type timer)
-			- $filter
-			- $log
-	
-	- Creating a Factory
-		- define reusable tasks
-		- share code between controllers
-		- create and return a custom object
-		- created using the module.factory() function
-		- can be injected into other components
-		- can have dependencies
-	
-	- Creating a Service
-		- similar to a factory as far as functionality
-		- represents the returned object as opposed to a custom object like in a factory
-		- created using the module.service() function
-		- can be injected into other components
-		- factory == custom object
-		- service == function IS the object
-	
-	- Defining Application Values
-		- value
-			- a value can be created by module.value(key, value)
-			- can't be injected into the config
-		- constants
-			- a constant can be created by using module.constant(key, value)
-			- CAN be injected into the config (earlier in the lifecycle)
-	
-	- Making AJAX Calls from a Factory/Service
+	## Factory and Service Overview
+	- AngularJS includes several built-in factories/services
+	- singletons
+		- Ajax calls
+		- business rules
+		- calculations
+		- data sharing between controllers
+	- can create your own using the Module approach
+	- built-ins: (services)
 		- $http
-			- provided out of the box
-			- provides Ajax functionality
-			- uses XmlHttpRequest object
-			- async
-			- supports multiple HTTP verbs
-		$http makes async call
-			- relies on on $q service's deferred / promise API
-			- access data by calling then() or success()/error()
-			
+		- $timeout
+		- $window
+		- $location
+		- $q (async processes)
+		- $rootScope
+		- $interval (repeating type timer)
+		- $filter
+		- $log
+
+	## Creating a Factory
+- define reusable tasks
+- share code between controllers
+- create and return a custom object
+- created using the module.factory() function
+- can be injected into other components
+- can have dependencies
+
+	## Creating a Service
+- similar to a factory as far as functionality
+- represents the returned object as opposed to a custom object like in a factory
+- created using the module.service() function
+- can be injected into other components
+- factory == custom object
+- service == function IS the object
+
+	## Defining Application Values
+- value
+	- a value can be created by module.value(key, value)
+	- can't be injected into the config
+- constants
+	- a constant can be created by using module.constant(key, value)
+	- CAN be injected into the config (earlier in the lifecycle)
+
+	## Making AJAX Calls from a Factory/Service
+- $http
+	- provided out of the box
+	- provides Ajax functionality
+	- uses XmlHttpRequest object
+	- async
+	- supports multiple HTTP verbs
+- $http makes async call
+	- relies on on $q service's deferred / promise API
+	- access data by calling then() or success()/error()
+
 # PART 6: UI and Animation
 	- Enhancing the UI with Bootstrap
 	
