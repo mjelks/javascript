@@ -1,4 +1,4 @@
-AngularJS Intro
+# AngularJS Intro
 - Big Picture
 - Views, Directives, and Filters
 - Controllers, Scope, and Modules
@@ -95,7 +95,7 @@ AngularJS Intro
 - AngularJS Documentation
 	- AngularJS.org -> Develop -> API reference
 	
-PART 2 : Directives
+# PART 2 : Directives
 
 - Data Binding Overview
 	- JS doesn't provide native support for data binding
@@ -152,7 +152,7 @@ PART 2 : Directives
 		- orderBy
 		- uppercase
 
-PART 3 : Controllers & Scope
+# PART 3 : Controllers & Scope
 
 - AngularJS Architecture Patterns
 	- MVC
@@ -243,7 +243,7 @@ PART 3 : Controllers & Scope
 	
 	SimpleController.$inject = ['$scope']
 	
-PART 4: Routing
+# PART 4: Routing
 
 	- Routing Overview
 		- marry view with controller
@@ -273,7 +273,7 @@ PART 4: Routing
 		- $routeProvider injected into angular.module.config()
 		- route parameters are key (similar to rails design)
 		
-PART 5: Factories and Services
+# PART 5: Factories and Services
 	- Overview
 		- shared code across controllers
 		- built directly into AngularJS Framework
@@ -333,7 +333,7 @@ PART 5: Factories and Services
 			- relies on on $q service's deferred / promise API
 			- access data by calling then() or success()/error()
 			
-PART 6: UI and Animation
+# PART 6: UI and Animation
 	- Enhancing the UI with Bootstrap
 	
 	- Animation Overview
