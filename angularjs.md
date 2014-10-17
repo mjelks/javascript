@@ -244,6 +244,7 @@
 	
 	SimpleController.$inject = ['$scope']
 	```
+
 # PART 4: Routing
 
 	## Routing Overview
@@ -257,7 +258,7 @@
 		$routeProvider injected dynamically
 
 - Referencing the ngRoute Module
-	- Add a <script> tag that loads angular-route.js script
+	- Add a &lt;script&gt; tag that loads angular-route.js script
 		- right after loading angular.js
 	- reference ngRoute in your module
 		- var demoApp = angular.module('demoApp', ['ngRoute'])
